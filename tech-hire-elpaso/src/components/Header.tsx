@@ -27,7 +27,9 @@ export default function Header() {
           </li>
         </ul>
         <div className="relative hidden xs:flex sm:flex md:flex items-center justify-center gap-3">
-          <button className="hidden xl:block">Login</button>
+          <button className=" hidden xl:block bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600">
+            Login
+          </button>
           <Image
             className="xl:hidden text-5xl cursor-pointer block"
             src="/images/menu.png"
@@ -39,7 +41,7 @@ export default function Header() {
         </div>
         {/* Mobile Menu */}
         <div
-          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-semibold text-lg transform transition-transform ${
+          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform ${
             isMenuOpen ? "opacity-100" : "opacity-0"
           }`}
           style={{ transition: "transform 0.3s ease,opacity 0.3s ease" }}
@@ -54,7 +56,9 @@ export default function Header() {
             Contact
           </li>
           <li className="list-none w-full text-center p2 hover:text-red-500 transition-all cursor-pointer">
-            <button>Login</button>
+            <button className="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 mb-5">
+              Login
+            </button>
           </li>
         </div>
       </header>
