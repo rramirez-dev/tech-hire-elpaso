@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <section className="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12">
+      <section className="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row gap-12">
         {/* Left Content */}
         <div className="md:w-1/2 mb-8 md:mb-0 space-y-8">
           <h1 className="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight">
@@ -21,7 +21,7 @@ export default function Home() {
           </button>
         </div>
         {/* Right Content */}
-        <div className="md:w-1/2">
+        <div className="md:pb-50 md:w-1/2">
           <img
             src="/images/programmer-desk.jpg"
             alt="Programmers at a desk"
