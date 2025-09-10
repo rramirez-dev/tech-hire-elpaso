@@ -6,7 +6,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <header className=" max-w-[1440px] mx-auto flex justify-between items-center text-black py-4 px-4 md:px-32 bg-white drop-shadow-sm">
+      <header className="sticky top-0 z-50 max-w-[1440px] mx-auto flex justify-between items-center text-black py-4 px-4 md:px-32 bg-white drop-shadow-sm">
         <a href="#">
           <Image
             src="/images/techhireep_logo.png"
