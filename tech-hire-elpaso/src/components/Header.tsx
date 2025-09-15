@@ -26,7 +26,7 @@ export default function Header() {
             Contact
           </li>
         </ul>
-        <div className="relative hidden xs:flex sm:flex md:flex items-center justify-center gap-3">
+        <div className="relative xs:flex sm:flex md:flex items-center justify-center gap-3">
           <button className=" hidden xl:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
             Login
           </button>
