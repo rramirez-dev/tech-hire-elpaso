@@ -102,6 +102,108 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* News / Upcomming Events */}
+      <section className="max-w-[1440px] container mx-auto px-4 py-10 flex flex-col md:flex-row gap-12">
+        {/* Left Content */}
+        <div className="md:pb-10 md:w-1/2">
+          <h1 className="lg:text-2xl md:text-3lg text-2xl font-bold text-heading-text">
+            Upcoming Workshops
+          </h1>
+          <hr className="mt-2 mb-5 border-1 border-gray-300" />
+          <div className="flex flex-row md:flex-col gap-2">
+            {/* Card */}
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex flex-col bg-gray-700 text-white font-bold text-center justify-center p-2">
+                <div className="">20</div>
+                <div className="">September</div>
+              </div>
+              <div className="flex flex-col">
+                <div className="font-bold">
+                  Maximizing your LinkedIn Profile
+                </div>
+                <div className="font-bold text-gray-400">
+                  Hosted by: Erin Lopez
+                </div>
+                <div className="">WED, 8:00PM MDT</div>
+                <div className="">40 Going</div>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex flex-col bg-gray-700 text-white font-bold text-center justify-center p-2">
+                <div className="">21</div>
+                <div className="">September</div>
+              </div>
+              <div className="flex flex-col">
+                <div className="font-bold">Improving your Job Search</div>
+                <div className="font-bold text-gray-400">
+                  Hosted by: Robert Gonzalez
+                </div>
+                <div className="">THUR, 8:00PM MDT</div>
+                <div className="">10 Going</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Right Content */}
+        <div className="md:pb-10 md:w-1/2">
+          <h1 className="lg:text-2xl md:text-3lg text-2xl font-bold text-heading-text">
+            Upcoming Meetups
+          </h1>
+          <hr className="mt-2 mb-5 border-1 border-gray-300" />
+          <div className="flex flex-row md:flex-col gap-2">
+            {/* Card */}
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex flex-col bg-gray-700 text-white font-bold text-center justify-center p-2">
+                <div className="">04</div>
+                <div className="">September</div>
+              </div>
+              <div className="flex flex-col">
+                <div className="font-bold">
+                  Gettings Started with iOS Development
+                </div>
+                <div className="font-bold text-gray-400">
+                  Hosted by: iOS Developers Group
+                </div>
+                <div className="">MON, 7:00PM MDT</div>
+                <div className="">13 Going</div>
+              </div>
+            </div>
+
+            {/* Card */}
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex flex-col bg-gray-700 text-white font-bold text-center justify-center p-2">
+                <div className="">15</div>
+                <div className="">September</div>
+              </div>
+              <div className="flex flex-col">
+                <div className="font-bold">Tailwind Crash Course</div>
+                <div className="font-bold text-gray-400">
+                  Hosted by: Web Developers Group
+                </div>
+                <div className="">FRI, 7:00PM MDT</div>
+                <div className="">20 Going</div>
+              </div>
+            </div>
+
+            {/* Card */}
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex flex-col bg-gray-700 text-white font-bold text-center justify-center p-2">
+                <div className="">25</div>
+                <div className="">September</div>
+              </div>
+              <div className="flex flex-col">
+                <div className="font-bold">React Fundamentals</div>
+                <div className="font-bold text-gray-400">
+                  Hosted by: React Developer Group Group
+                </div>
+                <div className="">MON, 7:00PM MDT</div>
+                <div className="">40 Going</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
