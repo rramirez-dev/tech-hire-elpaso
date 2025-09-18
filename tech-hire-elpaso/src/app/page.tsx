@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="max-w-[1440px] container mx-auto px-4 py-10 flex flex-col md:flex-row gap-12">
+      <section className="max-screen-width px-4 py-10 flex flex-col md:flex-row gap-12">
         {/* Left Content */}
         <div className="md:w-1/2 mb-8 md:mb-0 space-y-8">
           <h1 className="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight">
@@ -35,21 +35,21 @@ export default function Home() {
       </section>
 
       {/* Content Section */}
-      <section className="max-w-[1440px] container mx-auto px-20 py-5 flex flex-row md:flex-row gap-12 justify-between bg-gray-200 rounded-xl">
+      <section className="max-screen-width px-5 md:px-20 py-5 flex flex-row md:flex-row gap-12 justify-between bg-gray-200 rounded-xl">
         <div className="flex items-center justify-center flex-col">
-          <div className="text-2xl font-bold">200+</div>
-          <div className="text-xl font-bold">Members</div>
+          <div className="text-sm md:text-2xl font-bold">200+</div>
+          <div className="text-sm md:text-xl font-bold">Members</div>
         </div>
         <div className="flex items-center justify-center flex-col">
-          <div className="text-2xl font-bold">90+</div>
-          <div className="text-xl font-bold">Workshops</div>
+          <div className="text-sm md:text-2xl font-bold">90+</div>
+          <div className="text-sm md:text-xl font-bold">Workshops</div>
         </div>
         <div className="flex items-center justify-center flex-col">
-          <div className="text-2xl font-bold">30+</div>
-          <div className="text-xl font-bold">Community Projects</div>
+          <div className="text-sm md:text-2xl font-bold">30+</div>
+          <div className="text-sm md:text-xl font-bold">Community Projects</div>
         </div>
       </section>
-      <section className="max-w-[1440px] container mx-auto px-4 py-5 flex items-stretch flex-col md:flex-row gap-12 justify-between">
+      <section className="max-screen-width px-4 py-5 flex items-stretch flex-col md:flex-row gap-12 justify-between">
         <div className="overflow-y-auto md:max-w-sm rounded-2xl overflow-hidden shadow-lg">
           <Image
             className="w-full h-1/2"
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
       </section>
       {/* News / Upcomming Events */}
-      <section className="max-w-[1440px] container mx-auto px-4 py-10 flex flex-col md:flex-row gap-12">
+      <section className="max-screen-width px-4 py-10 flex flex-col md:flex-row gap-12">
         {/* Left Content */}
         <div className="md:pb-10 md:w-1/2">
           <h1 className="lg:text-2xl md:text-3lg text-2xl font-bold text-heading-text">
