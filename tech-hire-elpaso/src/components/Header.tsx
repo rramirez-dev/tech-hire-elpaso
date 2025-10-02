@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
         </a>
         <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
           <li className="p-3  hover:text-red-500 rounded-md transition-all">
-            Home
+            <Link href="/">Home</Link>
           </li>
           <li className="p-3  hover:text-red-500 rounded-md transition-all">
             Events
@@ -27,9 +28,12 @@ export default function Header() {
           </li>
         </ul>
         <div className="relative xs:flex sm:flex md:flex items-center justify-center gap-3">
-          <button className=" hidden xl:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+          <Link
+            href="/login"
+            className=" hidden xl:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+          >
             Login
-          </button>
+          </Link>
           <Image
             className="xl:hidden text-5xl cursor-pointer block"
             src="/images/menu.png"
@@ -56,9 +60,12 @@ export default function Header() {
             Contact
           </li>
           <li className="list-none w-full text-center p2 hover:text-red-500 transition-all cursor-pointer">
-            <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 mb-5">
+            <Link
+              href="/login"
+              className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 mb-5"
+            >
               Login
-            </button>
+            </Link>
           </li>
         </div>
       </header>
