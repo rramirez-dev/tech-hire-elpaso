@@ -48,8 +48,9 @@ git remote add upstream https://github.com/ORIGINAL-OWNER/tech-hire-elpaso.git
 
 ### Step 1: Create a New Branch
 
-Always create a new branch for your changes. Never work directly on `main`.
-
+* No commits should be made to the `main` branch directly. The `main` branch shall only consist of the deployed code
+* Developers are expected to work on feature branches, and upon successful development and testing, a PR (pull request) must be opened to merge with `dev`
+* Use kebab-case for branch names
 ```bash
 git checkout -b descriptive-branch-name
 ```
