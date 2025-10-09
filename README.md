@@ -15,7 +15,6 @@ Before contributing, follow these steps:
 
 - Read the [Code of Conduct](https://github.com/rramirez-dev/tech-hire-elpaso/blob/dev/CODE_OF_CONDUCT.md)
 - Read the [CONTRIBUTING.md](https://github.com/rramirez-dev/tech-hire-elpaso/blob/dev/CONTRIBUTING.md) guidelines
-- Download Xcode 16.0 or later
 - Browse the open [issues](https://github.com/rramirez-dev/tech-hire-elpaso/issues) and **comment** which you would like to work on
   - It is only one person per issue, except where noted.
 - **Fork** this repo
