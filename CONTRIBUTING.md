@@ -70,7 +70,13 @@ Branch naming conventions:
 - Include tests for new functionality
 - Update documentation if needed
 
-### Step 4: Commit Your Changes
+### Step 4: Run the project
+```bash
+From the tech-hire-elpaso directory cd to the tech-hire-elpaso sub-dicrectory
+run: npm run dev
+visit: http://localhost:3000
+````
+### Step 5: Commit Your Changes
 
 Write clear, descriptive commit messages:
 
