@@ -45,7 +45,7 @@ export default function Header() {
         </div>
         {/* Mobile Menu */}
         <div
-          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform ${
+          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform p-5 ${
             isMenuOpen ? "opacity-100" : "opacity-0"
           }`}
           style={{ transition: "transform 0.3s ease,opacity 0.3s ease" }}
