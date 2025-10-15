@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
             oraganize Meetups, Hosts Workshops, and build Open Source projects
             for the community.
           </p>
-          <button className="bg-primary text-white px-12 py-4 rounded-lg hover:bg-red-600 shadow-lg hover:shadow-xl transition duration-300 text-lg font-medium cursor-pointer">
+          <Link href="/register" className="bg-primary text-white px-12 py-4 rounded-lg hover:bg-red-600 shadow-lg hover:shadow-xl transition duration-300 text-lg font-medium cursor-pointer inline-block text-center">
             Register
-          </button>
+          </Link>
         </div>
         {/* Right Content */}
         <div className="md:pb-10 md:w-1/2">
