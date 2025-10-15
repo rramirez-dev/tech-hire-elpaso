@@ -51,9 +51,9 @@ function page() {
                 Login
               </button>
 
-              <p>
+              <p className="text-center">
                 No account?
-                <Link href="/register" className="text-blue-500 px-5">
+                <Link href="/register" className="text-blue-500 px-2 hover:underline">
                   Register
                 </Link>
               </p>
