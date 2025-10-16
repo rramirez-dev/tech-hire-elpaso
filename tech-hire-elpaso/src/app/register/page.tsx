@@ -1,21 +1,31 @@
 import React from "react";
 import Link from "next/link";
 
-function page() {
+export default function RegisterPage() {
   return (
     <section className="max-screen-width min-h-screen">
       <div className="flex items-center justify-center">
         <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm mt-20">
           <form action="">
             <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
-              Login
+              Create account
             </h2>
 
             <div className="mb-4">
-              <label
-                htmlFor="email"
-                className="block text-gray-700 font-bold mb-2"
-              >
+              <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
+                Full name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="border rounded-lg w-full py-2 px-3"
+                required
+              />
+            </div>
+
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
                 Email
               </label>
               <input
@@ -27,11 +37,8 @@ function page() {
               />
             </div>
 
-            <div className="mb-6">
-              <label
-                htmlFor="password"
-                className="block text-gray-700 font-bold mb-2"
-              >
+            <div className="mb-4">
+              <label htmlFor="password" className="block text-gray-700 font-bold mb-2">
                 Password
               </label>
               <input
@@ -43,18 +50,31 @@ function page() {
               />
             </div>
 
+            <div className="mb-6">
+              <label htmlFor="confirmPassword" className="block text-gray-700 font-bold mb-2">
+                Confirm password
+              </label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                className="border rounded-lg w-full py-2 px-3"
+                required
+              />
+            </div>
+
             <div className="flex flex-col gap-5">
               <button
                 type="submit"
                 className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700"
               >
-                Login
+                Register
               </button>
 
               <p className="text-center">
-                No account?
-                <Link href="/register" className="text-blue-500 px-2 hover:underline">
-                  Register
+                Have an account?
+                <Link href="/login" className="text-blue-500 px-2 hover:underline">
+                  Login
                 </Link>
               </p>
             </div>
@@ -64,5 +84,3 @@ function page() {
     </section>
   );
 }
-
-export default page;
