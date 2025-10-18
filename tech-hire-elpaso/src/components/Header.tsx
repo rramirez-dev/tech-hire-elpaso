@@ -7,23 +7,31 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <header className="sticky top-0 z-50 max-w-[1440px] mx-auto flex justify-between items-center text-black py-4 px-4 md:px-32 bg-white drop-shadow-sm">
-        <a href="#">
+      <header className="sticky top-0 z-50 max-w-[1440px] mx-auto flex justify-between items-center text-black py-4 px-4 md:px-32 bg-white drop-shadow-sm dark:bg-black">
+        <Link href="/">
           <Image
+            className="block dark:hidden"
             src="/images/techhireep_logo.png"
             alt="Tech Hire El Paso Logo"
             width={100}
             height={100}
           ></Image>
-        </a>
+          <Image
+            src="/images/techhire_ep_dark.png"
+            alt="Tech Hire El Paso Logo"
+            className="hidden dark:block"
+            width={100}
+            height={100}
+          />
+        </Link>
         <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
-          <li className="p-3  hover:text-red-500 rounded-md transition-all">
+          <li className="p-3  hover:text-red-500 rounded-md transition-all dark:text-white">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-3  hover:text-red-500 rounded-md transition-all">
+          <li className="p-3  hover:text-red-500 rounded-md transition-all dark:text-white">
             Events
           </li>
-          <li className="p-3  hover:text-red-500 rounded-md transition-all">
+          <li className="p-3  hover:text-red-500 rounded-md transition-all dark:text-white">
             Contact
           </li>
         </ul>
@@ -45,7 +53,7 @@ export default function Header() {
         </div>
         {/* Mobile Menu */}
         <div
-          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform p-5 ${
+          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform p-5 dark:bg-black dark:text-white${
             isMenuOpen ? "opacity-100" : "opacity-0"
           }`}
           style={{ transition: "transform 0.3s ease,opacity 0.3s ease" }}
