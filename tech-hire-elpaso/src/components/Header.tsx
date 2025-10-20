@@ -7,32 +7,24 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <header className="sticky top-0 z-50 max-w-[1440px] mx-auto flex justify-between items-center text-black py-4 px-4 md:px-32 bg-white drop-shadow-sm dark:bg-black">
-        <Link href="/">
+      <header className="sticky top-0 z-50 max-w-[1440px] mx-auto flex justify-between items-center text-black py-4 px-4 md:px-32 bg-white drop-shadow-sm">
+        <a href="#">
           <Image
-            className="block dark:hidden"
             src="/images/techhireep_logo.png"
             alt="Tech Hire El Paso Logo"
             width={100}
             height={100}
           ></Image>
-          <Image
-            src="/images/techhire_ep_dark.png"
-            alt="Tech Hire El Paso Logo"
-            className="hidden dark:block"
-            width={100}
-            height={100}
-          />
-        </Link>
+        </a>
         <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
-          <li className="p-3  hover:text-red-500 rounded-md transition-all dark:text-white">
+          <li className="p-3  hover:text-red-500 rounded-md transition-all">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-3  hover:text-red-500 rounded-md transition-all dark:text-white">
-            Events
+          <li className="p-3 hover:text-red-500 rounded-md transition-all">
+            <Link href="/events">Events</Link>
           </li>
-          <li className="p-3  hover:text-red-500 rounded-md transition-all dark:text-white">
-            Contact
+          <li className="p-3 hover:text-red-500 rounded-md transition-all">
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
         <div className="relative xs:flex sm:flex md:flex items-center justify-center gap-3">
