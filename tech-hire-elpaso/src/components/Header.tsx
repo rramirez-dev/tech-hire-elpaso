@@ -44,13 +44,13 @@ export default function Header() {
           ></Image>
         </div>
         {/* Mobile Menu */}
-        <div>
-          <ul
-            className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform p-5 ${
-              isMenuOpen ? "opacity-100" : "opacity-0"
-            }`}
-            style={{ transition: "transform 0.3s ease,opacity 0.3s ease" }}
-          >
+        <div
+          className={`absolute xl:hidden top-22 left-0 w-full bg-white flex flex-col items-center gap-2 font-medium text-md transform transition-transform p-5 ${
+            isMenuOpen ? "opacity-100" : "opacity-0"
+          }`}
+          style={{ transition: "transform 0.3s ease,opacity 0.3s ease" }}
+        >
+          <ul>
             <li className="list-none w-full text-center p-2 hover:text-red-500 transition-all cursor-pointer">
               <Link
                 href="/"
