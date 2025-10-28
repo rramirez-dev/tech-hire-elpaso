@@ -3,83 +3,101 @@ import Link from "next/link";
 
 export default function RegisterPage() {
   return (
-    <section className="max-screen-width min-h-screen">
-      <div className="flex items-center justify-center">
-        <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-sm mt-20">
-          <form action="">
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
-              Create account
-            </h2>
+    <section className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gradient-to-br dark:from-black dark:to-gray-900 transition-colors duration-700">
+      <div className="w-full max-w-md bg-white/90 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-10 shadow-2xl dark:shadow-[0_0_35px_rgba(255,0,0,0.25)] mt-16 border border-gray-200 dark:border-gray-800 transition-all duration-500">
+        <form action="">
+          {/* Header */}
+          <h2 className="text-3xl font-extrabold text-center text-gray-800 dark:text-white mb-8 tracking-tight">
+            Create Your Account
+          </h2>
 
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-                Full name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="border rounded-lg w-full py-2 px-3"
-                required
-              />
-            </div>
+          {/* Full Name */}
+          <div className="mb-5">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            >
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="w-full rounded-lg px-4 py-3 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+              required
+            />
+          </div>
 
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="border rounded-lg w-full py-2 px-3"
-                required
-              />
-            </div>
+          {/* Email */}
+          <div className="mb-5">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="w-full rounded-lg px-4 py-3 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+              required
+            />
+          </div>
 
-            <div className="mb-4">
-              <label htmlFor="password" className="block text-gray-700 font-bold mb-2">
-                Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                className="border rounded-lg w-full py-2 px-3"
-                required
-              />
-            </div>
+          {/* Password */}
+          <div className="mb-5">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            >
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              className="w-full rounded-lg px-4 py-3 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+              required
+            />
+          </div>
 
-            <div className="mb-6">
-              <label htmlFor="confirmPassword" className="block text-gray-700 font-bold mb-2">
-                Confirm password
-              </label>
-              <input
-                type="password"
-                id="confirmPassword"
-                name="confirmPassword"
-                className="border rounded-lg w-full py-2 px-3"
-                required
-              />
-            </div>
+          {/* Confirm Password */}
+          <div className="mb-8">
+            <label
+              htmlFor="confirmPassword"
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+            >
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              className="w-full rounded-lg px-4 py-3 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all duration-300"
+              required
+            />
+          </div>
 
-            <div className="flex flex-col gap-5">
-              <button
-                type="submit"
-                className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700"
-              >
-                Register
-              </button>
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-semibold py-3 rounded-lg shadow-md dark:shadow-[0_0_20px_rgba(255,0,0,0.3)] transition-all duration-300"
+          >
+            Register
+          </button>
 
-              <p className="text-center">
-                Have an account?
-                <Link href="/login" className="text-blue-500 px-2 hover:underline">
-                  Login
-                </Link>
-              </p>
-            </div>
-          </form>
-        </div>
+          {/* Footer */}
+          <p className="text-center text-sm text-gray-700 dark:text-gray-400 mt-6">
+            Have an account?
+            <Link
+              href="/login"
+              className="text-red-600 dark:text-red-400 font-medium ml-1 hover:underline transition-colors duration-300"
+            >
+              Login
+            </Link>
+          </p>
+        </form>
       </div>
     </section>
   );
