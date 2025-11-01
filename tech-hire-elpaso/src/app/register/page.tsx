@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function RegisterPage() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-white dark:bg-black">
-      <div className="w-full max-w-md bg-white/90 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-10 shadow-2xl dark:shadow-[var(--red-drop-shadow)] mt-16 border border-gray-200 dark:border-gray-800 transition-all duration-500">
+      <div className="w-full max-w-md bg-white/90 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-10 shadow-2xl dark:shadow-[var(--white-drop-shadow)] -mt-50 border border-gray-200 dark:border-gray-800">
         <form action="">
           {/* Header */}
           <h2 className="text-3xl font-extrabold text-center text-gray-800 dark:text-white mb-8 tracking-tight">
