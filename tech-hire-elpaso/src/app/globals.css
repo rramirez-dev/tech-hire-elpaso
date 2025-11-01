@@ -5,7 +5,7 @@
   --color-secondary: #rgba(245, 56, 56, 0.35);
   --color-primary-text: #4f5665;
   --color-heading-text: #08132a;
-  --red-drop-shadow: 0 0 35px rgba(255, 255, 255, 0.25);
+  --white-drop-shadow: 0 0 35px rgba(255, 255, 255, 0.25);
 }
 
 .max-screen-width {
