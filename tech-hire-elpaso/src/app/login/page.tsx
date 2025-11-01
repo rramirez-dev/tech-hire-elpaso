@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function LoginPage() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gradient-to-br dark:from-black dark:to-gray-900 transition-colors duration-700">
-      <div className="w-full max-w-md bg-white/90 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-10 shadow-2xl dark:shadow-[0_0_35px_rgba(255,0,0,0.25)] mt-16 border border-gray-200 dark:border-gray-800 transition-all duration-500">
+    <section className="min-h-screen flex items-center justify-center bg-white dark:bg-black">
+      <div className="w-full max-w-md bg-white dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-10 shadow-2xl dark:shadow-[var(--white-drop-shadow)] border -mt-90 border-gray-200 dark:border-gray-800">
         <form action="">
           {/* Header */}
           <h2 className="text-3xl font-extrabold text-center text-gray-800 dark:text-white mb-8 tracking-tight">
